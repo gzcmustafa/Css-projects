@@ -1,0 +1,80 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        h3{
+            margin: 0;
+        }
+        header,footer{
+            background-color: #8267BE;
+            color: #FFBD35;
+            padding: 10px;
+        }
+        .menu{
+            width: 25%;
+                      
+        }
+        .menu ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        .menu li{
+            padding: 8px;
+            margin-bottom: 8px;
+            background-color: #502064;
+            color: #fff;
+        }
+        .menu li:hover{
+            cursor: pointer;
+            background-color: #8267BE;
+        }
+
+        .content{
+            width: 75%;
+                  
+        }
+        .clearfix::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        .col{
+            float: left;
+            padding: 15px 15px 15px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h2>Header</h2>
+    </header>
+
+    <main class="clearfix">
+        <div class="menu col">
+            <ul>
+                <li>Html</li>
+                <li>Css</li>
+                <li>Javascript</li>
+            </ul>
+        </div>
+        <div class="content col"> 
+            <h3>FULL-STACK WEB DEVELOPMENT</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum fuga nihil, ex dolores placeat cumque quo reiciendis fugit dolorum deleniti, saepe quaerat porro! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates cupiditate eveniet repellendus sed possimus ullam maxime nihil, sit inventore distinctio, sint illum neque.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis qui quibusdam odit molestias tempora distinctio in voluptates provident aperiam, iste quia explicabo molestiae illum commodi eum iusto eos consequatur dicta dolorum dolor!</p>
+        </div>
+    </main>
+    
+    <footer>
+        <h2>Footer</h2>
+    </footer>
+
+</body>
+</html>
