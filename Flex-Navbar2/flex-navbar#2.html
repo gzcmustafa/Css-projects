@@ -1,0 +1,126 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebSite</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-image: url(https://images.pexels.com/photos/2047905/pexels-photo-2047905.jpeg?cs=srgb&dl=pexels-junior-teixeira-2047905.jpg&fm=jpg);
+            background-position: center;
+           
+            background-size: cover;
+        }
+        nav{
+            display: flex;
+            justify-content: space-between;
+            color:#fff;
+            padding: 10px 30px;
+        }
+        nav a{
+            color: #fff;
+            align-self: center;
+            font-size: 20px;
+            padding: 20px;
+            text-decoration: none;
+        }
+        .navigation{
+            list-style: none;
+            display: flex;
+        }
+        .navigation a{
+            display: block;
+            padding: 15px;
+            border: 1px solid transparent;
+            border-radius: 25px;
+        }
+        .navigation a:hover{
+            background-color: #ff7b25;
+        }
+        .navigation li:last-child{
+            display: none;
+        }
+        @media (max-width:800px) {
+            nav{
+                position: relative;
+                flex-direction: column;
+            }
+            nav a{
+                align-self: flex-start;
+            }
+            .navigation{
+                flex-direction: column;
+            }
+            .navigation a{
+                text-align: center;
+                padding: 10px;
+                border-top: 1px solid white;
+                border-bottom: 1px solid rgba(0,0,0,0.1);
+            }
+            .navigation li:last-child{
+                display: block;
+                position: absolute;
+                top: 17px;
+                right: 10px;
+            }
+            
+            .navigation li:last-child a{
+                border-top: none;
+            }
+        }
+
+
+        @media (max-width:600px) {
+            nav{
+                position: relative;
+                flex-direction: column;
+            }
+            nav a{
+                align-self: flex-start;
+            }
+            .navigation{
+                flex-direction: column;
+            }
+            .navigation a{
+                text-align: center;
+                padding: 10px;
+                border-top: 1px solid white;
+                border-bottom: 1px solid rgba(0,0,0,0.1);
+            }
+            .navigation li:last-child{
+                display: block;
+                position: absolute;
+                top: 17px;
+                right: 10px;
+            }
+            .responsive .navigation li:not(:last-child){
+                display: none;
+            }
+            .navigation li:last-child a{
+                border-top: none;
+            }
+        }
+       
+    </style>
+</head>
+<body>
+    <nav class="responsive">
+        <a href="">LOGO</a>
+        <ul class="navigation">
+            <li><a href="">Home</a></li>
+            <li><a href="">Dropdown</a></li>
+            <li><a href="">Listings</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">
+                <i class="fa fa-bars"></i>
+            </a></li>
+        </ul>
+    </nav>
+</body>
+</html>
