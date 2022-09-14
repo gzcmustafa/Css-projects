@@ -29,6 +29,53 @@
             background-color: #ddd;
             color: #000;
         }
+        .ph{
+            background-color: #aaa;
+            width: 100%;
+            padding: 20px;
+            margin-top: 10px;
+        }
+        #main{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        #content{
+          flex: 75%;
+          padding: 20px;
+        }
+        #sidebar{
+            flex: 25%;
+            order:1;
+            padding: 20px;
+            background-color: #f1f1f1;
+            
+        }
+        .box{
+            margin-bottom: 25px;
+        }
+        p{
+            margin: 10px 0;
+        }
+        #content :first-child{
+           margin-top: 20px;
+        }
+        .footer{
+            background-color: white;
+            text-align: center;
+            padding: 20px;
+            color: red;
+        }
+        @media (max-width:700px){
+            #main, .navbar{
+                flex-direction: column;
+            }
+            .navbar{
+                text-align: center;
+            }
+            #sidebar{
+                order: -1;
+            }
+        }
     </style>
 </head>
 <body>
@@ -38,10 +85,48 @@
     </div>
 
     <div class="navbar">
-        <a href="">Link1</a>
-        <a href="">Link2</a>
-        <a href="">Link3</a>
-        <a href="">Link4</a>
+        <a href="">Link 1</a>
+        <a href="">Link 2</a>
+        <a href="">Link 3</a>
+        <a href="">Link 4</a>
     </div>
+
+    <div id="main">
+        <div id="sidebar">
+            <div class="box">
+                <h2>Lorem, ipsum dolor.</h2>
+                <div class="ph" style="height: 200px;"></div>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam minus, harum placeat eligendi doloremque esse, similique, nemo minima dolor tenetur incidunt voluptas consectetur aliquid!</p>
+            </div>
+            <div class="ph" style="height:50px;"></div>
+            <div class="ph" style="height:50px;"></div>
+            <div class="ph" style="height:49.9px;"></div>
+            
+        </div>
+        <div id="content">
+            <div class="box">
+                <h2>Lorem, ipsum dolor.</h2>
+                <div class="ph" style="height: 200px;"></div>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam minus, harum placeat eligendi doloremque esse, similique, nemo minima dolor tenetur incidunt voluptas consectetur aliquid!</p>
+            </div>
+            <div class="box">
+                <h2>Lorem, ipsum dolor.</h2>
+                <div class="ph" style="height: 200px;"></div>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam minus, harum placeat eligendi doloremque esse, similique, nemo minima dolor tenetur incidunt voluptas consectetur aliquid!</p>
+            </div>
+            <div class="box">
+                <h2>Lorem, ipsum dolor.</h2>
+                <div class="ph" style="height: 200px;"></div>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam minus, harum placeat eligendi doloremque esse, similique, nemo minima dolor tenetur incidunt voluptas consectetur aliquid!</p>
+            </div>
+        </div>    
+    </div>
+    <div class="footer">
+        FOOTER AREA
+    </div>
+
+
+
+
 </body>
 </html>
