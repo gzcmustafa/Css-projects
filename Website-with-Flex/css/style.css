@@ -128,3 +128,21 @@ img{
     margin: 2rem 0 3rem;
     
 }
+
+/* icons */
+.icons{
+    padding: 30px;
+}
+
+.icons h3{
+    font-weight: 400;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.icons i {
+    background-color: var(--primary);
+    color: #fff;
+    padding: 1rem;
+    border-radius: 50%;
+}
