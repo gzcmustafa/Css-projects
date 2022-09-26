@@ -56,6 +56,7 @@
     color: var((--white));
     background-color: var(--success);
 }
+
 .btn-danger{
     color: var(--white);
     background-color: var(--danger);
@@ -64,6 +65,12 @@
     color: var(--white);
     background-color: var(--warning);
 }
+
+.btn-warningx{
+    color: var(--white);
+    background-color:#FF8C00;
+}
+
 .btn-dark{
     color: var(--white);
     background-color: var(--dark);

@@ -83,3 +83,48 @@ img{
     color: var(--warning);
     margin-right:5px;
 }
+
+/* Header */
+.main-header{
+    background-image: url('../img/bg-1.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: #fff;
+    position: relative;
+}
+
+.main-header .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+}
+
+.main-header::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.main-header *{
+    z-index: 1;
+}
+
+.main-header .content h1{
+    font-size: 5.5rem;
+}
+
+.main-header .content p{
+    font-size: 2.3rem;
+    max-width: 60rem;
+    margin: 2rem 0 3rem;
+    
+}
