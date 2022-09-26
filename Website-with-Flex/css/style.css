@@ -130,6 +130,10 @@ img{
 }
 
 /* icons */
+#services{
+    height: 290px;
+}
+
 .icons{
     padding: 30px;
 }
@@ -145,4 +149,25 @@ img{
     color: #fff;
     padding: 1rem;
     border-radius: 50%;
+}
+.about{
+    display: flex;
+    background-color: darkgray;
+    
+}
+.about-left{
+    background-image: url("../img/about1.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    height: 400px;
+}
+.about-right{
+    display: flex;
+    width: 50%;
+    height: 400px;
+}
+.right-content{
+    margin: auto auto;
 }
