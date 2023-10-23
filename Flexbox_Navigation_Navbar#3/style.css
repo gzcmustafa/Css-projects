@@ -67,12 +67,15 @@
         margin: 0 200px;
        
     }
-    /* .navbar-toggle:hover  {
+    .navbar-toggle:hover a{
         color: black;
+    }
+    .navbar-toggle:hover  {
+        
         background: linear-gradient(45deg, #FDDF45, #94D4E9, #FFFFFF, #006F87);
         opacity: 0.9;
 
-       } */
+       }
 
     .active{
         display: inline;
